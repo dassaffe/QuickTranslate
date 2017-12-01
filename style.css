@@ -1,0 +1,43 @@
+.translationOverlay {
+    position: relative;
+}
+
+.inner {
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 99;
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0.4rem 0;
+    /* font-size: $font-size-sm;
+    // Allow breaking very long words so they don't overflow the tooltip's bounds
+    word-wrap: break-word;
+    opacity: 0;
+    */
+}
+
+.arrow {
+    position: absolute;
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    left: 50%;
+    bottom: 0;
+}
+
+.arrow::before {
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    margin-left: -0.4rem;
+    content: "";
+    border-width: 0.4rem 0.4rem 0;
+    border-top-color: #222;
+}
