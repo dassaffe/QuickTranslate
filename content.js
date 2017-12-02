@@ -28,10 +28,8 @@ function showTranslation(rect, request) {
     div.appendChild(arrow)
     div.appendChild(inner)
 
-    div.style.left = rect.left-(rect.width / 2) + 'px';
-
     // text setup
-    var text = document.createTextNode("(Trottel, das Wort steht für) "+request.translation);
+    var text = document.createTextNode("(Trottel!!!, das Wort steht für) "+request.translation);
     var requiredLength = text.width;
 
     div.style.width = requiredLength+ 'px';
@@ -39,5 +37,9 @@ function showTranslation(rect, request) {
 
     inner.appendChild(text);
 
+    console.log("boundaries: " +rect.width);
+    console.log("textbox: " + inner.offsetWidth);
+
+    div.style.left = rect.left-(inner.offsetWidth / 2)+(rect.width / 2) + 'px';
     div.style.opacity = 1;
 }
