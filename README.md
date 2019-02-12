@@ -1,3 +1,3 @@
-[ ] Übersetzungen
-[ ] WebUI Editor
-[ ] STEPXML Editor
+- [ ] Übersetzungen
+- [ ] WebUI Editor
+- [ ] STEPXML Editor
